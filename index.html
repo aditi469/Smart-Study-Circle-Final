@@ -1,0 +1,909 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: Updated Title for keywords -->
+    <title>Smart Study Circle | Best Coaching Classes in India for JEE, NEET, SSC, and Classes 1-12</title>
+    <!-- SEO: Meta Description -->
+    <meta name="description" content="Smart Study Circle is a premier coaching institute operating across India, offering comprehensive classes for students from Class 1 to 12, competitive exams like JEE, NEET, SSC, CHSL, CGL, Banking, and Olympiads. Join our nationwide network of expert tutors.">
+    <!-- SEO: Keywords -->
+    <meta name="keywords" content="India coaching, JEE coaching, NEET preparation, SSC CGL classes, banking exams, Classes 1-12 tuition, Smart Junior Study Circle, Olympiad coaching, best tutors India, all India teacher network">
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f0f4f8; /* Very Light Blue-Gray Background */
+        }
+        
+        /* Custom Scrollbar for better UX */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e9eef2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0d6efd; /* Deeper Blue */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0a58ca;
+        }
+
+        /* Ensure smooth transition for all elements */
+        * {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Hero text gradient */
+        .hero-gradient {
+            background-image: linear-gradient(to right, #0d6efd, #00bfff); /* Blue to Sky Blue */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Junior Circle specific styling for warmth */
+        .junior-circle-card {
+            background-color: #fffbe6; /* Pale Yellow */
+            border-left: 8px solid #ffc107; /* Bright Yellow */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Result counter styling */
+        .result-counter {
+            background-image: linear-gradient(135deg, #0d6efd 0%, #17a2b8 100%); /* Blue to Cyan Gradient */
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-xl fixed w-full z-30">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            
+            <!-- Logo with Tagline -->
+            <a href="#home" class="flex items-center space-x-2 p-1 rounded-xl hover:bg-blue-50/50 transition duration-300">
+                <!-- Logo Icon: A blue circle with a graduation cap inside -->
+                <div class="bg-[#0d6efd] p-2 rounded-full shadow-md">
+                    <i data-lucide="graduation-cap" class="w-6 h-6 text-white stroke-[3px]"></i>
+                </div>
+                <div>
+                    <!-- H1 for SEO and main brand name -->
+                    <h1 class="text-xl font-extrabold text-[#0d6efd] leading-tight">Smart Study Circle</h1>
+                    <!-- Tagline (Hidden on smaller mobile screens for space) -->
+                    <p class="hidden sm:block text-xs font-semibold text-gray-600 mt-0.5 tracking-wider">
+                        Pioneering Academic and Competitive Success
+                    </p>
+                </div>
+            </a>
+            <!-- End Logo Block -->
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6 font-semibold" aria-label="Main Navigation">
+                <a href="#home" class="text-gray-600 hover:text-[#0d6efd] p-2 rounded-lg">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-[#0d6efd] p-2 rounded-lg">About Us</a>
+                <!-- NEW LINKS -->
+                <a href="#features" class="text-gray-600 hover:text-[#0d6efd] p-2 rounded-lg">Methodology</a>
+                <a href="#classes" class="text-gray-600 hover:text-[#0d6efd] p-2 rounded-lg">Our Classes</a>
+                <a href="#results" class="text-gray-600 hover:text-[#0d6efd] p-2 rounded-lg">Results</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-[#0d6efd] p-2 rounded-lg">Stories</a>
+                <!-- END NEW LINKS -->
+                <a href="#forms" class="text-white bg-[#ffc107] font-bold py-2 px-3 rounded-full shadow-md hover:bg-yellow-600 transition duration-300 transform hover:scale-105">Forms/Careers</a>
+                <a href="#faq" class="text-gray-600 hover:text-[#0d6efd] p-2 rounded-lg">FAQ</a>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden p-2 text-gray-600 focus:outline-none focus:ring-2 focus:ring-[#0d6efd] rounded-md" aria-label="Open Menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Navigation (Hidden by default) -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200" aria-label="Mobile Navigation">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-100">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-100">About Us</a>
+                <!-- NEW MOBILE LINKS -->
+                <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-100">Methodology</a>
+                <a href="#classes" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-100">Our Classes</a>
+                <a href="#results" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-100">Results</a>
+                <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-100">Success Stories</a>
+                <!-- END NEW MOBILE LINKS -->
+                <a href="#forms" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-[#0d6efd] hover:bg-[#0a58ca]">Forms/Careers</a>
+                <a href="#faq" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-100">FAQ</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-24">
+        
+        <!-- Home Section (Hero) -->
+        <section id="home" class="py-20 md:py-32 bg-white shadow-inner">
+            <div class="container mx-auto px-4 text-center">
+                <!-- Use H1 in the main logo/title above, use H2 here for SEO hierarchy -->
+                <h2 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                    <span class="hero-gradient">India's Hub</span> for Academic <br class="hidden sm:inline"> and <span class="hero-gradient">Competitive Success</span>
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Comprehensive coaching institute providing dedicated education for <strong class="text-[#0d6efd]">Classes 1 to 12</strong>, and specialized batches for <strong class="text-[#0d6efd]">JEE, NEET, SSC, Banking, and Olympiad</strong> aspirants, nationwide.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#forms" class="inline-flex items-center justify-center bg-[#0d6efd] text-white font-bold py-3 px-10 rounded-full shadow-lg hover:bg-[#0a58ca] transition duration-300 transform hover:scale-105">
+                        <i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2"></i> Enroll Today
+                    </a>
+                    <!-- FIX APPLIED HERE: Changed href from #forms to #teacher-career -->
+                    <a href="#teacher-career" class="inline-flex items-center justify-center border border-[#0d6efd] text-[#0d6efd] font-bold py-3 px-10 rounded-full bg-white hover:bg-blue-50 transition duration-300 transform hover:scale-105">
+                        Join Our Teacher Network
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-gray-50 border-t border-b border-gray-200">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-[#0d6efd]">Why Choose Smart Study Circle?</h2>
+                <div class="max-w-4xl mx-auto text-lg space-y-6">
+                    <p>
+                        Operating across India, <strong class="text-[#0d6efd]">Smart Study Circle</strong> is dedicated to fostering academic success and holistic development. We believe in <strong class="text-[#0d6efd]">personalized attention</strong>, ensuring every student, regardless of their background or current performance, reaches their full potential. Our rigorous methodology is results-driven, making us the preferred choice for parents and students nationally.
+                    </p>
+                    <p>
+                        Our mission extends beyond board exams. We provide a rigorous, supportive environment for students from primary levels right up to those preparing for India's toughest competitive examinations like <strong class="text-[#0d6efd]">JEE, NEET, and the SSC/Banking sectors</strong>. We also proudly train future leaders for <strong class="text-[#0d6efd]">Olympiad</strong> challenges with advanced, subject-specific mentorship.
+                    </p>
+                    <p class="font-bold text-xl border-l-4 border-yellow-500 pl-4">
+                        We are more than just an institute; we are a circle of smart, dedicated educators and ambitious students committed to achieving greatness together.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- NEW SECTION: Methodology & Core Features -->
+        <section id="features" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-[#0d6efd]">Our Core Methodology: The Smart Difference</h2>
+                <p class="text-center text-lg text-gray-600 mb-16 max-w-3xl mx-auto">
+                    We combine personalized teaching with structured preparation, ensuring maximum conceptual clarity and exam readiness for every student.
+                </p>
+
+                <div class="grid md:grid-cols-4 gap-8">
+                    <!-- Feature 1: Personalized Learning -->
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-lg border-b-4 border-blue-500 text-center hover:bg-blue-100">
+                        <i data-lucide="user-check" class="w-10 h-10 text-blue-600 mx-auto mb-3"></i>
+                        <h4 class="text-xl font-bold mb-2">Personalized Attention</h4>
+                        <p class="text-sm text-gray-600">Focus on individual student needs, identifying and addressing weak areas with tailored learning plans, even in competitive batches.</p>
+                    </div>
+
+                    <!-- Feature 2: Expert Faculty Network -->
+                    <div class="bg-green-50 p-6 rounded-xl shadow-lg border-b-4 border-green-500 text-center hover:bg-green-100">
+                        <i data-lucide="users" class="w-10 h-10 text-green-600 mx-auto mb-3"></i>
+                        <h4 class="text-xl font-bold mb-2">Nationwide Expert Faculty</h4>
+                        <p class="text-sm text-gray-600">Access to a vetted network of subject matter experts for all boards and competitive exams across the country.</p>
+                    </div>
+
+                    <!-- Feature 3: Regular Mock Tests & Analysis -->
+                    <div class="bg-purple-50 p-6 rounded-xl shadow-lg border-b-4 border-purple-500 text-center hover:bg-purple-100">
+                        <i data-lucide="pencil-ruler" class="w-10 h-10 text-purple-600 mx-auto mb-3"></i>
+                        <h4 class="text-xl font-bold mb-2">Structured Test Series</h4>
+                        <p class="text-sm text-gray-600">Weekly, monthly, and full-length mock tests with detailed performance analysis to track progress and refine strategy.</p>
+                    </div>
+
+                    <!-- Feature 4: Dedicated Doubt Clearing -->
+                    <div class="bg-yellow-50 p-6 rounded-xl shadow-lg border-b-4 border-yellow-500 text-center hover:bg-yellow-100">
+                        <i data-lucide="help-circle" class="w-10 h-10 text-yellow-600 mx-auto mb-3"></i>
+                        <h4 class="text-xl font-bold mb-2">Immediate Doubt Resolution</h4>
+                        <p class="text-sm text-gray-600">Scheduled and impromptu doubt-clearing sessions to ensure no student is left behind on any complex topic.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END NEW SECTION: Methodology & Core Features -->
+
+
+        <!-- Classes Section -->
+        <section id="classes" class="py-16 md:py-24 bg-gray-50 border-t border-b border-gray-200">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-[#0d6efd]">Our Diverse Programs: School to Competitive Exams</h2>
+                
+                <!-- Smart Junior Study Circle (Classes 1-5) - Distinct Design -->
+                <a href="#junior-circle" class="block no-underline">
+                    <div id="junior-circle" class="junior-circle-card p-6 md:p-10 rounded-xl mb-12 cursor-pointer hover:shadow-2xl transform hover:scale-[1.01] transition duration-500">
+                        <div class="flex flex-col md:flex-row items-center justify-between">
+                            <div>
+                                <h3 class="text-3xl font-extrabold text-yellow-800 mb-2">Smart Junior Study Circle (Classes 1-5)</h3>
+                                <p class="text-lg text-yellow-700 mb-4">
+                                    Dedicated focus on building foundational knowledge, critical thinking, and a love for learning in young minds. Call our dedicated junior line for specialized inquiry.
+                                </p>
+                                <div class="flex items-center space-x-2 text-yellow-900 font-bold">
+                                    <i data-lucide="phone-call" class="w-6 h-6"></i>
+                                    <span class="text-xl">Junior Connect: 9910430128</span>
+                                </div>
+                            </div>
+                            <i data-lucide="graduation-cap" class="w-20 h-20 text-yellow-600 opacity-50 hidden md:block" alt="Smart Junior Study Circle Classes 1-5"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Higher Level Classes (6-12 and Competitive) -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- School Classes (UPDATED TEXT) -->
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-md border-t-4 border-[#0d6efd] hover:shadow-lg transform hover:translate-y-[-5px]">
+                        <i data-lucide="book-open-text" class="w-8 h-8 text-[#0d6efd] mb-3" alt="School Academic Classes 6 to 12"></i>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">School Academics (Classes 6-12)</h4>
+                        <p class="text-gray-600">Comprehensive <strong class="text-[#0d6efd]">coaching for all subjects</strong> across Classes 6 to 12, tailored to various board curricula (CBSE, ICSE, etc.) by expert tutors <strong class="text-[#0d6efd]">nationwide</strong>.</p>
+                    </div>
+
+                    <!-- Competitive Exams - JEE/NEET -->
+                    <div class="bg-green-50 p-6 rounded-xl shadow-md border-t-4 border-green-600 hover:shadow-lg transform hover:translate-y-[-5px]">
+                        <i data-lucide="zap" class="w-8 h-8 text-green-600 mb-3" alt="JEE NEET Competitive Exam Preparation"></i>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Engineering & Medical Entrance (JEE, NEET)</h4>
+                        <p class="text-gray-600">Specialized batches for <strong class="text-green-600">NEET and JEE</strong> (Mains & Advanced), focusing on intensive practice, mock tests, and strategic exam strategies.</p>
+                    </div>
+
+                    <!-- Government/Banking Exams -->
+                    <div class="bg-red-50 p-6 rounded-xl shadow-md border-t-4 border-red-600 hover:shadow-lg transform hover:translate-y-[-5px]">
+                        <i data-lucide="shield-check" class="w-8 h-8 text-red-600 mb-3" alt="SSC CGL CHSL Banking Exam Coaching"></i>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Government & Banking Exams (SSC, CGL, CHSL)</h4>
+                        <p class="text-gray-600">Targeted <strong class="text-red-600">SSC, CHSL, CGL, and Banking exam</strong> preparation, including detailed modules for quantitative aptitude, reasoning, and General Knowledge.</p>
+                    </div>
+
+                    <!-- Olympiad -->
+                    <div class="bg-purple-50 p-6 rounded-xl shadow-md border-t-4 border-purple-600 hover:shadow-lg transform hover:translate-y-[-5px]">
+                        <i data-lucide="award" class="w-8 h-8 text-purple-600 mb-3" alt="Olympiad Coaching Classes"></i>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Olympiad Preparation</h4>
+                        <p class="text-gray-600">Advanced coaching for students aiming for National and International Science and Mathematics Olympiads, building superior critical thinking.</p>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center text-xl p-6 bg-blue-100 rounded-xl max-w-lg mx-auto shadow-md">
+                    <p class="font-bold text-gray-700">
+                        Direct Connect (Classes 6-12 & Higher): <span class="text-[#0d6efd] font-extrabold">8178417817</span>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- NEW SECTION: Results & Track Record -->
+        <section id="results" class="py-16 md:py-24 bg-[#0d6efd] bg-opacity-95 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-16 text-white">Our Track Record: Defining Success, Nationwide</h2>
+                
+                <!-- Success Counters -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 max-w-6xl mx-auto">
+                    
+                    <div class="result-counter">
+                        <!-- UPDATED: 25,000+ Students -->
+                        <p class="text-5xl font-extrabold mb-1">25,000+</p>
+                        <p class="text-sm font-light uppercase tracking-wider">Students Coached</p>
+                    </div>
+
+                    <div class="result-counter">
+                        <p class="text-5xl font-extrabold mb-1">50+</p>
+                        <p class="text-sm font-light uppercase tracking-wider">Top-100 Ranks (JEE/NEET)</p>
+                    </div>
+                    
+                    <div class="result-counter">
+                        <p class="text-5xl font-extrabold mb-1">98%+</p>
+                        <p class="text-sm font-light uppercase tracking-wider">Board Exam Pass Rate</p>
+                    </div>
+
+                    <div class="result-counter">
+                        <!-- UPDATED: 15+ Operational Years in NCR Origin -->
+                        <p class="text-5xl font-extrabold mb-1">15+</p>
+                        <p class="text-sm font-light uppercase tracking-wider">Operational Years (NCR Origin)</p>
+                    </div>
+                </div>
+                
+                <!-- NEW DESCRIPTIVE TEXT ADDED HERE -->
+                <p class="text-xl mt-12 mb-6 max-w-4xl mx-auto font-medium">
+                    <strong class="text-yellow-300">Originating 15+ years ago in the Delhi NCR region</strong>, we have grown to become a nationwide leader. While our roots remain in the NCR, our extensive network now serves dedicated students and partners across all major states in India, ensuring competitive quality no matter the location.
+                </p>
+                <!-- Hall of Fame section REMOVED -->
+                
+            </div>
+        </section>
+        <!-- END NEW SECTION: Results & Track Record -->
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-[#0d6efd]">Success Stories & Testimonials</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-yellow-500 transform hover:shadow-xl">
+                        <i data-lucide="quote" class="w-6 h-6 text-yellow-500 mb-3"></i>
+                        <p class="text-gray-600 italic mb-4">"My daughter is in Class 4 (Smart Junior Study Circle), and her confidence in Math has skyrocketed. The teachers are incredibly patient and engaging."</p>
+                        <p class="font-bold text-gray-900">- Kavya Sharma (Parent, Junior Circle)</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#0d6efd] transform hover:shadow-xl">
+                        <i data-lucide="quote" class="w-6 h-6 text-[#0d6efd] mb-3"></i>
+                        <p class="text-gray-600 italic mb-4">"I joined the NEET program after struggling with physics. The structured classes and mock tests provided by Smart Study Circle made all the difference. Highly recommended!"</p>
+                        <p class="font-bold text-gray-900">- Rahul Verma (NEET Aspirant)</p>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-600 transform hover:shadow-xl">
+                        <i data-lucide="quote" class="w-6 h-6 text-green-600 mb-3"></i>
+                        <p class="text-gray-600 italic mb-4">"The preparation for SSC CGL was intense but thoroughly covered. I finally cleared Tier I on my first attempt, thanks to the comprehensive banking and SSC modules."</p>
+                        <p class="font-bold text-gray-900">- Anjali Singh (SSC Candidate)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Forms Section -->
+        <section id="forms" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-16 text-[#0d6efd]">Join Our Circle: Student Enrollment & Teacher Careers</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    
+                    <!-- Student Inquiry Form -->
+                    <div class="bg-gray-50 p-6 md:p-10 rounded-xl shadow-2xl border-t-8 border-red-500">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6 text-gray-900">Student Enrollment Inquiry (All India)</h3>
+                        <p class="text-gray-600 mb-6">Start your journey to success. Tell us about the student and your specific educational needs. We will contact you shortly!</p>
+                        
+                        <!-- ADDED method="POST" and data-netlify="true" for form submission -->
+                        <form id="student-form" class="space-y-4" method="POST" data-netlify="true">
+                            <div>
+                                <label for="s-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" id="s-name" name="name" required class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-red-500 focus:ring-red-500">
+                            </div>
+
+                            <!-- UPDATED GRID: Class and NEW Subject Field -->
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="s-class" class="block text-sm font-medium text-gray-700">Current Class (e.g., 9th, 12th, JEE Aspirant)</label>
+                                    <input type="text" id="s-class" name="class" required class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-red-500 focus:ring-red-500">
+                                </div>
+                                <!-- NEW SUBJECT FIELD ADDED HERE -->
+                                <div>
+                                    <label for="s-subject" class="block text-sm font-medium text-gray-700">Subject(s) Needed (e.g., Physics, Maths, Reasoning)</label>
+                                    <input type="text" id="s-subject" name="subject" required class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-red-500 focus:ring-red-500">
+                                </div>
+                            </div>
+
+                            <!-- UPDATED GRID: Primary Phone and WhatsApp Phone -->
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="s-phone" class="block text-sm font-medium text-gray-700">Primary Phone Number</label>
+                                    <input type="tel" id="s-phone" name="phone" required class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-red-500 focus:ring-red-500">
+                                </div>
+                                <!-- WhatsApp Number Field (now in grid) -->
+                                <div>
+                                    <label for="s-whatsapp" class="block text-sm font-medium text-gray-700">WhatsApp Number (Optional, Preferred Contact)</label>
+                                    <div class="relative mt-1">
+                                        <input type="tel" id="s-whatsapp" name="whatsapp_phone" class="block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-green-500 focus:ring-green-500 pl-10" placeholder="Same as phone number or different">
+                                        <!-- Icon for visual appeal -->
+                                        <i data-lucide="message-square-text" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-green-500"></i>
+                                    </div>
+                                    <p class="text-xs text-gray-500 mt-1">We primarily use WhatsApp for fast updates and scheduling confirmations.</p>
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="s-school" class="block text-sm font-medium text-gray-700">School Name</label>
+                                    <input type="text" id="s-school" name="school" class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-red-500 focus:ring-red-500">
+                                </div>
+                                <div>
+                                    <label for="s-board" class="block text-sm font-medium text-gray-700">Board Name (e.g., CBSE, ICSE)</label>
+                                    <input type="text" id="s-board" name="board" class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-red-500 focus:ring-red-500">
+                                </div>
+                            </div>
+
+                            <!-- UPDATED MESSAGE FIELD: Increased size, new max length, new label -->
+                            <div>
+                                <label for="s-message" class="block text-sm font-medium text-gray-700">Detailed Requirement (Max 2000 words)</label>
+                                <textarea id="s-message" name="message" rows="5" maxlength="14000" class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-red-500 focus:ring-red-500" placeholder="e.g., I need a tutor for Class 11 Physics and Chemistry. I struggle with mechanics and organic chemistry, specifically chapter 3 and 7. I am available Mon/Wed/Fri evenings."></textarea>
+                                <p class="text-xs text-gray-500 mt-1">Note: This extensive field is for detailing your precise needs, availability, and weak areas. (Max 2000 words)</p>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-red-500 text-white font-bold py-3 px-4 rounded-xl shadow-lg hover:bg-red-600 transition duration-300 transform hover:scale-[1.01]">
+                                Submit Student Inquiry
+                            </button>
+                            <p id="student-msg" class="text-center text-sm font-semibold mt-3 hidden"></p>
+                        </form>
+                    </div>
+
+                    <!-- Teacher Submission Form (UPDATED TEXT AND LOCATION FIELDS) -->
+                    <!-- *** ADDED method="POST" and data-netlify="true" for form submission *** -->
+                    <div id="teacher-career" class="bg-gray-50 p-6 md:p-10 rounded-xl shadow-2xl border-t-8 border-[#0d6efd]">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-6 text-gray-900">Teacher Partnership Application (All India)</h3>
+                        <p class="text-gray-600 mb-6">Partner with us to receive high-quality class leads and expand your teaching career <strong class="text-[#0d6efd]">across India</strong>.</p>
+                        
+                        <form id="teacher-form" class="space-y-4" method="POST" data-netlify="true">
+                            <!-- 1. Name -->
+                            <div>
+                                <label for="t-name" class="block text-sm font-medium text-gray-700">1. Full Name</label>
+                                <input type="text" id="t-name" name="name" required class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-[#0d6efd] focus:ring-[#0d6efd]">
+                            </div>
+
+                            <!-- 2. Teaching Mode Selection -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 font-bold mb-2">2. Preferred Teaching Mode</label>
+                                <div class="flex flex-wrap gap-4 bg-white p-3 rounded-lg border shadow-inner">
+                                    <label class="flex items-center space-x-2 text-sm text-gray-800">
+                                        <input type="radio" name="teachingMode" value="Offline" required class="rounded text-[#0d6efd] focus:ring-[#0d6efd]" id="mode-offline" onclick="toggleOfflineArea(true)">
+                                        <span>Offline (In-person)</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2 text-sm text-gray-800">
+                                        <input type="radio" name="teachingMode" value="Online" required class="rounded text-[#0d6efd] focus:ring-[#0d6efd]" id="mode-online" onclick="toggleOfflineArea(false)">
+                                        <span>Online (Remote)</span>
+                                    </label>
+                                    <label class="flex items-center space-x-2 text-sm text-gray-800">
+                                        <input type="radio" name="teachingMode" value="Hybrid" required class="rounded text-[#0d6efd] focus:ring-[#0d6efd]" id="mode-hybrid" onclick="toggleOfflineArea(true)">
+                                        <span>Hybrid (Both)</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- 3. Offline Area Coverage (Conditional - IMPROVED FIELDS) -->
+                            <div id="offline-area-container" class="space-y-4 hidden border-l-4 border-yellow-500 pl-4 py-2">
+                                <p class="block text-sm font-medium text-gray-800 font-bold">3. Physical Teaching Location (Required for Offline/Hybrid Modes)</p>
+                                
+                                <!-- Address Line 1 -->
+                                <div>
+                                    <label for="t-address-line1" class="block text-xs font-medium text-gray-600">Address Line 1 (Location where you will teach)</label>
+                                    <input type="text" id="t-address-line1" name="addressLine1" placeholder="e.g., Your home address, Coaching Centre name, or nearest landmark" class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-yellow-500 focus:ring-yellow-500">
+                                </div>
+
+                                <div class="grid sm:grid-cols-3 gap-4">
+                                    <!-- City/District -->
+                                    <div>
+                                        <label for="t-city" class="block text-xs font-medium text-gray-600">City / District</label>
+                                        <input type="text" id="t-city" name="city" placeholder="e.g., Mumbai, Pune, Kolkata" class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-yellow-500 focus:ring-yellow-500">
+                                    </div>
+                                    <!-- State/Province -->
+                                    <div>
+                                        <label for="t-state" class="block text-xs font-medium text-gray-600">State / Province</label>
+                                        <input type="text" id="t-state" name="state" placeholder="e.g., Maharashtra, Delhi, Karnataka" class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-yellow-500 focus:ring-yellow-500">
+                                    </div>
+                                    <!-- Pincode -->
+                                    <div>
+                                        <label for="t-pincode" class="block text-xs font-medium text-gray-600">Pincode</label>
+                                        <input type="text" id="t-pincode" name="pincode" placeholder="e.g., 110001" pattern="\d{6}" title="Six digit Pincode" class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-yellow-500 focus:ring-yellow-500">
+                                    </div>
+                                </div>
+                                
+                                <p class="text-xs text-gray-500 mt-1">We use these details to accurately match you with students requiring in-person classes near your location.</p>
+                            </div>
+
+
+                            <!-- START: UPDATED Classes and Subjects Section (Retaining previous request) -->
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <!-- Classes/Levels Column -->
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2 font-bold">4. Classes & Levels (Select all you teach)</label>
+                                    <div class="bg-white p-4 rounded-lg border h-72 overflow-y-scroll space-y-1 shadow-inner">
+                                        <h4 class="text-xs font-semibold text-gray-500 uppercase pb-1 border-b mb-1">School Classes (1-12)</h4>
+                                        <div class="grid grid-cols-2 gap-2">
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Class 1" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Class 1</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Class 7" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Class 7</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Class 2" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Class 2</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Class 8" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Class 8</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Class 3" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Class 3</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Class 9" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Class 9</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Class 4" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Class 4</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Class 10" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Class 10</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Class 5" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Class 5</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Class 11" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Class 11</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Class 6" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Class 6</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Class 12" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Class 12</span></label>
+                                        </div>
+                                        
+                                        <h4 class="text-xs font-semibold text-gray-500 uppercase pt-3 pb-1 border-b mt-2">Competitive Exams</h4>
+                                        <div class="grid grid-cols-2 gap-2">
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="NEET" class="rounded text-green-600 focus:ring-green-600"><span>NEET</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="JEE Mains/Advanced" class="rounded text-green-600 focus:ring-green-600"><span>JEE Mains/Adv.</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="SSC/Banking" class="rounded text-red-600 focus:ring-red-600"><span>SSC/Banking</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="classes" value="Olympiad" class="rounded text-purple-600 focus:ring-purple-600"><span>Olympiad</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Subjects Column -->
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2 font-bold">5. Subjects (Select all you specialize in)</label>
+                                    <div class="bg-white p-4 rounded-lg border h-72 overflow-y-scroll space-y-1 shadow-inner">
+                                        <h4 class="text-xs font-semibold text-gray-500 uppercase pb-1 border-b mb-1">Core & Science</h4>
+                                        <div class="grid grid-cols-2 gap-2">
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="Physics" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Physics</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="Chemistry" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Chemistry</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="Biology" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Biology</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="Mathematics" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Mathematics</span></label>
+                                        </div>
+
+                                        <h4 class="text-xs font-semibold text-gray-500 uppercase pt-3 pb-1 border-b mt-2">Humanities & Commerce</h4>
+                                        <div class="grid grid-cols-2 gap-2">
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="English" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>English</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="Hindi/Vernacular" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Hindi/Vernacular</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="History" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>History</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="Geography" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Geography</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="Political Science" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Political Science</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="Economics" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Economics</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="Accountancy" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Accountancy</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="Business Studies" class="rounded text-[#0d6efd] focus:ring-[#0d6efd]"><span>Business Studies</span></label>
+                                        </div>
+
+                                        <h4 class="text-xs font-semibold text-gray-500 uppercase pt-3 pb-1 border-b mt-2">Competitive Skills</h4>
+                                        <div class="grid grid-cols-2 gap-2">
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="General Aptitude" class="rounded text-red-600 focus:ring-red-600"><span>General Aptitude</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="Reasoning" class="rounded text-red-600 focus:ring-red-600"><span>Reasoning</span></label>
+                                            <label class="flex items-center space-x-2 text-sm text-gray-800"><input type="checkbox" name="subjects" value="General Knowledge" class="rounded text-red-600 focus:ring-red-600"><span>General Knowledge</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END: UPDATED Classes and Subjects Section -->
+
+                            <!-- 6. Resume Link -->
+                            <div>
+                                <label for="t-resume" class="block text-sm font-medium text-gray-700">6. Resume Link (Google Drive/Dropbox/PDF URL)</label>
+                                <input type="url" id="t-resume" name="resume" required placeholder="e.g., https://drive.google.com/d/..." class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-[#0d6efd] focus:ring-[#0d6efd]">
+                                <p class="text-xs text-gray-500 mt-1">Please ensure the link is publicly accessible (viewable by everyone).</p>
+                            </div>
+
+                            <!-- 7. Teaching Moto -->
+                            <div>
+                                <label for="t-moto" class="block text-sm font-medium text-gray-700">7. Your Teaching Moto (Brief philosophy)</label>
+                                <textarea id="t-moto" name="moto" rows="3" required class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-[#0d6efd] focus:ring-[#0d6efd]" placeholder="e.g., To inspire curiosity and build problem-solvers, not just memory experts."></textarea>
+                            </div>
+
+                            <!-- 8. Video Link -->
+                            <div>
+                                <label for="t-video" class="block text-sm font-medium text-gray-700">8. 8-Minute Teaching Video Link (Google Drive/YouTube Unlisted)</label>
+                                <input type="url" id="t-video" name="video" required placeholder="e.g., https://drive.google.com/d/video-id" class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm p-3 border focus:border-[#0d6efd] focus:ring-[#0d6efd]">
+                                <p class="text-xs text-red-500 mt-1 font-semibold">
+                                    <i data-lucide="alert-triangle" class="inline w-4 h-4 mr-1"></i>
+                                    CRITICAL: This link MUST be publicly accessible to ensure we can review your teaching style.
+                                </p>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-[#0d6efd] text-white font-bold py-3 px-4 rounded-xl shadow-lg hover:bg-[#0a58ca] transition duration-300 transform hover:scale-[1.01]">
+                                Submit Teacher Application
+                            </button>
+                            <p id="teacher-msg" class="text-center text-sm font-semibold mt-3 hidden"></p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16 md:py-24 bg-gray-50 border-t border-b border-gray-200">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-4xl font-bold text-center mb-12 text-[#0d6efd]">Frequently Asked Questions (FAQ)</h2>
+                
+                <div class="space-y-4">
+                    
+                    <!-- NEW FAQ 1: Teacher Fee Structure -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-5 font-semibold text-left text-lg text-gray-800 hover:bg-gray-100" aria-expanded="false">
+                            <span>What is the fee structure or commission model for teachers?</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-5 pt-0 text-gray-600 hidden">
+                            <p>Our model is straightforward: we operate on a lead commission basis. Once you are successfully paired with a student, we take a **one-time placement fee** equivalent to a percentage of the student's *first month's tuition*. After the first month, the entire tuition fee is directly paid to you, the teacher. Specific percentages are discussed upon successful interview.</p>
+                        </div>
+                    </div>
+
+                    <!-- NEW FAQ 2: Lead Quality and Screening -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-5 font-semibold text-left text-lg text-gray-800 hover:bg-gray-100" aria-expanded="false">
+                            <span>How does Smart Study Circle ensure the quality and seriousness of student leads?</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-5 pt-0 text-gray-600 hidden">
+                            <p>We rigorously screen all student inquiries through our enrollment form and an initial phone consultation to verify genuine need and commitment. This ensures that the leads passed to our partner teachers are highly qualified and serious about starting classes. We prioritize matching the student's level, subject need, and location accurately with your profile.</p>
+                        </div>
+                    </div>
+
+                     <!-- NEW FAQ 3: Teaching Modality (Online/Offline) -->
+                     <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-5 font-semibold text-left text-lg text-gray-800 hover:bg-gray-100" aria-expanded="false">
+                            <span>Can I teach online, or must all classes be in-person (offline)?</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-5 pt-0 text-gray-600 hidden">
+                            <p>We cater to both needs. When filling out the Teacher Partnership Application, please indicate your preference (Online, Offline, or Hybrid) in the teaching mode section of the form. We will only match you with students whose requirements align with your chosen modality and geographical area.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4: Where is Smart Study Circle located (UPDATED TEXT) -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-5 font-semibold text-left text-lg text-gray-800 hover:bg-gray-100" aria-expanded="false">
+                            <span>Where is Smart Study Circle located and what areas do you serve?</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-5 pt-0 text-gray-600 hidden">
+                            <p>We operate across <strong class="text-[#0d6efd]">India</strong>. While our central coordination and a strong contingent of students are in the Delhi NCR region, we actively seek and place teachers nationwide, serving students through online, offline, and hybrid modes across all states and major cities.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 (Existing) -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-5 font-semibold text-left text-lg text-gray-800 hover:bg-gray-100" aria-expanded="false">
+                            <span>What is the difference between the two contact numbers provided?</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-5 pt-0 text-gray-600 hidden">
+                            <p>Please use <strong class="text-yellow-700">9910430128</strong> for inquiries related to the <strong class="text-yellow-700">Smart Junior Study Circle (Classes 1-5)</strong>. Use <strong class="text-[#0d6efd]">8178417817</strong> for all other inquiries, including Classes 6-12, JEE, NEET, SSC, and Banking exams.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 (Existing) -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-5 font-semibold text-left text-lg text-gray-800 hover:bg-gray-100" aria-expanded="false">
+                            <span>Do you offer demo classes before enrollment?</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-5 pt-0 text-gray-600 hidden">
+                            <p>Yes, we offer a limited number of complimentary demo sessions for most of our courses. Please submit an inquiry through the Student Enrollment Form to schedule a trial class.</p>
+                        </div>
+                    </div>
+
+                     <!-- FAQ Item 7 (Existing) -->
+                     <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-5 font-semibold text-left text-lg text-gray-800 hover:bg-gray-100" aria-expanded="false">
+                            <span>How will I know the status of my Teacher Application?</span>
+                            <i data-lucide="chevron-down" class="w-6 h-6 transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content p-5 pt-0 text-gray-600 hidden">
+                            <p>Once you submit the Teacher Submission Form, our recruitment team will review your credentials and teaching video. We will contact shortlisted candidates via email or phone within 7-10 business days.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 border-b border-gray-700 pb-8 mb-8">
+                <div>
+                    <h5 class="text-xl font-bold mb-4 text-[#0d6efd]">Smart Study Circle</h5>
+                    <p class="text-sm text-gray-400">Your trusted partner for academic and competitive exam success across India.</p>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Quick Links</h5>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#about" class="hover:text-[#0d6efd]">About Us</a></li>
+                        <!-- NEW FOOTER LINKS -->
+                        <li><a href="#features" class="hover:text-[#0d6efd]">Our Methodology</a></li>
+                        <li><a href="#classes" class="hover:text-[#0d6efd]">Courses</a></li>
+                        <li><a href="#results" class="hover:text-[#0d6efd]">Results & Track Record</a></li>
+                        <!-- END NEW FOOTER LINKS -->
+                        <li><a href="#forms" class="hover:text-[#0d6efd]">Teacher Join Us</a></li>
+                        <li><a href="#faq" class="hover:text-[#0d6efd]">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Contact Us (Higher)</h5>
+                    <p class="text-sm text-gray-400">Classes 6-12, JEE, NEET, SSC:</p>
+                    <p class="text-xl font-bold text-white mb-2">8178417817</p>
+                    <!-- UPDATED EMAIL ADDRESS HERE -->
+                    <p class="text-sm text-gray-400">Email: <a href="mailto:jhasir1971@gmail.com" class="hover:text-[#0d6efd]">jhasir1971@gmail.com</a></p>
+                </div>
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Contact Us (Junior)</h5>
+                    <p class="text-sm text-gray-400">Smart Junior Study Circle (Classes 1-5):</p>
+                    <p class="text-xl font-bold text-white mb-2">9910430128</p>
+                </div>
+            </div>
+
+            <!-- SEO: Final Copyright and Contact information is good for local SEO -->
+            <div class="text-center text-sm text-gray-500">
+                &copy; 2025 Smart Study Circle. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // 1. Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // 2. FAQ Accordion Logic
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                // FIX: Changed selector from 'i' to 'svg' because Lucide replaces <i> with <svg>
+                const icon = button.querySelector('svg'); 
+                
+                // Close other open FAQ items
+                document.querySelectorAll('.faq-content').forEach(otherContent => {
+                    if (otherContent !== content && !otherContent.classList.contains('hidden')) {
+                        otherContent.classList.add('hidden');
+                        otherContent.style.maxHeight = null;
+                        // FIX: Changed selector from 'i' to 'svg' for other icons as well
+                        const otherIcon = otherContent.previousElementSibling.querySelector('svg'); 
+                        if (otherIcon) otherIcon.classList.remove('rotate-180');
+                        otherContent.previousElementSibling.setAttribute('aria-expanded', 'false');
+                    }
+                });
+                
+                // Toggle current FAQ item
+                const isExpanded = content.classList.contains('hidden');
+                content.classList.toggle('hidden');
+                button.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+                
+                // The main icon toggle that was causing the error
+                if (icon) {
+                    icon.classList.toggle('rotate-180');
+                }
+                
+                if (!content.classList.contains('hidden')) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } else {
+                    content.style.maxHeight = null;
+                }
+            });
+        });
+
+        // 3. Form Submission Handling (Simulated Backend)
+
+        /**
+         * Function to toggle the visibility and required status of the offline area inputs.
+         * @param {boolean} show - True to show and require fields, false to hide and un-require/clear.
+         */
+        function toggleOfflineArea(show) {
+            const container = document.getElementById('offline-area-container');
+            const addressLine1 = document.getElementById('t-address-line1');
+            const city = document.getElementById('t-city');
+            const state = document.getElementById('t-state');
+            const pincode = document.getElementById('t-pincode');
+
+            const addressFields = [addressLine1, city, state, pincode];
+
+            if (show) {
+                container.classList.remove('hidden');
+                // The required status is critical for real submissions, keep it
+                addressFields.forEach(input => {
+                    input.setAttribute('required', 'required');
+                });
+            } else {
+                container.classList.add('hidden');
+                addressFields.forEach(input => {
+                    input.removeAttribute('required');
+                    input.value = ''; // Clear value if hidden/online
+                });
+            }
+        }
+        
+        // Initialize the toggle state on load (in case of cached form state)
+        document.addEventListener('DOMContentLoaded', () => {
+            const mode = document.querySelector('input[name="teachingMode"]:checked');
+            if (mode && (mode.value === 'Offline' || mode.value === 'Hybrid')) {
+                 toggleOfflineArea(true);
+            } else {
+                 toggleOfflineArea(false);
+            }
+        });
+
+
+        function showMessage(elementId, message, isSuccess = true) {
+            const el = document.getElementById(elementId);
+            el.textContent = message;
+            el.classList.remove('hidden', 'text-green-600', 'text-red-600');
+            el.classList.add(isSuccess ? 'text-green-600' : 'text-red-600');
+            setTimeout(() => {
+                el.classList.add('hidden');
+            }, 5000);
+        }
+
+        // Student Form Submission - NOTE: When deployed on Netlify, the data-netlify="true" attribute
+        // allows Netlify to capture the data even if JS intercepts it. For the Canvas environment, 
+        // we keep the JS intercept to display the message without a page reload.
+        document.getElementById('student-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+
+            if (data.message && data.message.length > 14000) {
+                 showMessage('student-msg', 'Error: Detailed requirement message is too long (max 2000 words).', false);
+                 return;
+            }
+
+            console.log("--- Student Inquiry Submission (For Backend) ---");
+            // The actual submission will be handled by Netlify when deployed.
+            // For now, we show success in the console/UI.
+            console.log(data);
+
+            showMessage('student-msg', 'Inquiry submitted successfully! We will contact you soon.', true);
+            e.target.reset(); // Clear the form
+        });
+
+        // Teacher Form Submission
+        document.getElementById('teacher-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = {};
+            
+            // Handle multi-select checkboxes for classes and subjects
+            const classesTaught = [];
+            formData.getAll('classes').forEach(c => classesTaught.push(c));
+            data.classesTaught = classesTaught;
+
+            const subjectsTaught = [];
+            formData.getAll('subjects').forEach(s => subjectsTaught.push(s));
+            data.subjectsTaught = subjectsTaught;
+
+            // Handle new teaching mode fields
+            data.teachingMode = formData.get('teachingMode');
+
+            // Handle detailed location fields for Offline/Hybrid modes
+            if (data.teachingMode === 'Offline' || data.teachingMode === 'Hybrid') {
+                data.offlineLocation = {
+                    addressLine1: formData.get('addressLine1'),
+                    city: formData.get('city'),
+                    state: formData.get('state'),
+                    pincode: formData.get('pincode')
+                };
+            } else {
+                data.offlineLocation = 'N/A (Online Only)';
+            }
+            
+            // Handle other fields
+            data.name = formData.get('name');
+            data.resumeLink = formData.get('resume');
+            data.teachingMoto = formData.get('moto');
+            data.videoLink = formData.get('video');
+
+            // Basic link validation (must look like a URL)
+            const urlRegex = new RegExp('^(https?:\\/\\/)?' + '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)*[a-z]{2,}|' + '((\\d{1,3}\\.){3}\\d{1,3}))' + '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + '(\\?[;&a-z\\d%_.~+=-]*)?' + '(\\#[-a-z\\d_]*)?$', 'i');
+            
+            if (!urlRegex.test(data.resumeLink) || !urlRegex.test(data.videoLink)) {
+                showMessage('teacher-msg', 'Error: Please provide valid, accessible URLs for both Resume and Video.', false);
+                return;
+            }
+
+            console.log("--- Teacher Application Submission (For Backend) ---");
+            // The actual submission will be handled by Netlify when deployed.
+            // For now, we show success in the console/UI.
+            console.log(data);
+
+            showMessage('teacher-msg', 'Application submitted! We will review your materials soon.', true);
+            e.target.reset(); // Clear the form
+        });
+
+        // Hide the offline area input if online is selected initially
+        document.addEventListener('DOMContentLoaded', () => {
+            if (document.getElementById('mode-online') && document.getElementById('mode-online').checked) {
+                toggleOfflineArea(false);
+            }
+        });
+    </script>
+</body>
+</html>
